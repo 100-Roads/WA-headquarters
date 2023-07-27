@@ -5700,7 +5700,7 @@
          "name":"roof1",
          "opacity":1,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":200,
          "x":0,
          "y":0
@@ -5831,7 +5831,7 @@
          "name":"roof2",
          "opacity":1,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":200,
          "x":0,
          "y":0
@@ -5962,7 +5962,7 @@
          "name":"sign1",
          "opacity":1,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":200,
          "x":0,
          "y":0
@@ -6093,7 +6093,7 @@
          "name":"sign2",
          "opacity":1,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":200,
          "x":0,
          "y":0
@@ -9474,16 +9474,6 @@
                          "name":"jitsiRoom",
                          "type":"string",
                          "value":"white-14"
-                        }, 
-                        {
-                         "name":"jitsiTrigger",
-                         "type":"string",
-                         "value":"onaction"
-                        }, 
-                        {
-                         "name":"jitsiTriggerMessage",
-                         "type":"string",
-                         "value":"Press SPACE to open Jitsi"
                         }]
                 }, 
                 {
@@ -9493,16 +9483,6 @@
                          "name":"jitsiRoom",
                          "type":"string",
                          "value":"white-14"
-                        }, 
-                        {
-                         "name":"jitsiTrigger",
-                         "type":"string",
-                         "value":"onaction"
-                        }, 
-                        {
-                         "name":"jitsiTriggerMessage",
-                         "type":"string",
-                         "value":"Press SPACE to open Jitsi"
                         }]
                 }, 
                 {
@@ -9512,16 +9492,6 @@
                          "name":"jitsiRoom",
                          "type":"string",
                          "value":"white-14"
-                        }, 
-                        {
-                         "name":"jitsiTrigger",
-                         "type":"string",
-                         "value":"onaction"
-                        }, 
-                        {
-                         "name":"jitsiTriggerMessage",
-                         "type":"string",
-                         "value":"Press SPACE to open Jitsi"
                         }]
                 }, 
                 {
@@ -10044,16 +10014,6 @@
                          "name":"jitsiRoom",
                          "type":"string",
                          "value":"white-14"
-                        }, 
-                        {
-                         "name":"jitsiTrigger",
-                         "type":"string",
-                         "value":"onaction"
-                        }, 
-                        {
-                         "name":"jitsiTriggerMessage",
-                         "type":"string",
-                         "value":"Press SPACE to open Jitsi"
                         }]
                 }, 
                 {
@@ -10063,16 +10023,6 @@
                          "name":"jitsiRoom",
                          "type":"string",
                          "value":"white-14"
-                        }, 
-                        {
-                         "name":"jitsiTrigger",
-                         "type":"string",
-                         "value":"onaction"
-                        }, 
-                        {
-                         "name":"jitsiTriggerMessage",
-                         "type":"string",
-                         "value":"Press SPACE to open Jitsi"
                         }]
                 }, 
                 {
@@ -10082,16 +10032,6 @@
                          "name":"jitsiRoom",
                          "type":"string",
                          "value":"white-14"
-                        }, 
-                        {
-                         "name":"jitsiTrigger",
-                         "type":"string",
-                         "value":"onaction"
-                        }, 
-                        {
-                         "name":"jitsiTriggerMessage",
-                         "type":"string",
-                         "value":"Press SPACE to open Jitsi"
                         }]
                 }, 
                 {
@@ -10614,16 +10554,6 @@
                          "name":"jitsiRoom",
                          "type":"string",
                          "value":"white-14"
-                        }, 
-                        {
-                         "name":"jitsiTrigger",
-                         "type":"string",
-                         "value":"onaction"
-                        }, 
-                        {
-                         "name":"jitsiTriggerMessage",
-                         "type":"string",
-                         "value":"Press SPACE to open Jitsi"
                         }]
                 }, 
                 {
@@ -10633,16 +10563,6 @@
                          "name":"jitsiRoom",
                          "type":"string",
                          "value":"white-14"
-                        }, 
-                        {
-                         "name":"jitsiTrigger",
-                         "type":"string",
-                         "value":"onaction"
-                        }, 
-                        {
-                         "name":"jitsiTriggerMessage",
-                         "type":"string",
-                         "value":"Press SPACE to open Jitsi"
                         }]
                 }, 
                 {
@@ -10652,16 +10572,6 @@
                          "name":"jitsiRoom",
                          "type":"string",
                          "value":"white-14"
-                        }, 
-                        {
-                         "name":"jitsiTrigger",
-                         "type":"string",
-                         "value":"onaction"
-                        }, 
-                        {
-                         "name":"jitsiTriggerMessage",
-                         "type":"string",
-                         "value":"Press SPACE to open Jitsi"
                         }]
                 }, 
                 {
