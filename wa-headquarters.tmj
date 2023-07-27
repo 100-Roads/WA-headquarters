@@ -4599,12 +4599,12 @@
                         {
                          "name":"default",
                          "type":"string",
-                         "value":"https:\/\/www.chatbase.co\/chatbot-iframe\/4pfFd6BJzq2Uc0xtMK6U2"
+                         "value":"https:\/\/workadventudotre.wpcomstaging.com\/pricing\/"
                         }, 
                         {
                          "name":"label",
                          "type":"string",
-                         "value":"https:\/\/workadventudotre.wpcomstaging.com\/pricing\/"
+                         "value":"Showroom 12 :"
                         }, 
                         {
                          "name":"persist",
@@ -5700,7 +5700,7 @@
          "name":"roof1",
          "opacity":1,
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":200,
          "x":0,
          "y":0
@@ -5831,7 +5831,7 @@
          "name":"roof2",
          "opacity":1,
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":200,
          "x":0,
          "y":0
@@ -5962,7 +5962,7 @@
          "name":"sign1",
          "opacity":1,
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":200,
          "x":0,
          "y":0
@@ -6093,7 +6093,7 @@
          "name":"sign2",
          "opacity":1,
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":200,
          "x":0,
          "y":0
