@@ -3819,7 +3819,7 @@
                         {
                          "name":"openWebsiteTrigger",
                          "type":"string",
-                         "value":"onicon"
+                         "value":"onaction"
                         }],
                  "rotation":0,
                  "visible":true,
@@ -4207,7 +4207,7 @@
                         {
                          "name":"default",
                          "type":"string",
-                         "value":"https:\/\/www.retrogames.cc\/embed\/24792-super-bomberman-europe.html"
+                         "value":"https:\/\/www.gameslol.net\/data\/emul\/retro\/load.php?sys=snk-neo-geo&r=mslugx.zip"
                         }, 
                         {
                          "name":"label",
@@ -4646,6 +4646,12 @@
                  "y":1768.66666666667
                 }],
          "opacity":1,
+         "properties":[
+                {
+                 "name":"tag",
+                 "type":"string",
+                 "value":"admin"
+                }],
          "type":"objectgroup",
          "visible":true,
          "x":0,
