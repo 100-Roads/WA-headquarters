@@ -1,41 +1,33 @@
 /// <reference types="@workadventure/iframe-api-typings" />
 
+import "./roofs";
+
 import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 import {ActionMessage} from "@workadventure/iframe-api-typings";
 
-console.log('Script started successfully');
-
-let currentPopup: any = undefined;
-
 // Waiting for the API to be ready
 WA.onInit().then(() => {
-    console.log('Scripting API ready');
-    console.log('Player tags: ',WA.player.tags)
 
-    WA.room.area.onEnter('clock').subscribe(() => {
-        const today = new Date();
-        const time = today.getHours() + ":" + today.getMinutes();
-        currentPopup = WA.ui.openPopup("clockPopup", "It's " + time, []);
-    })
+    const today = new Date();
+    const time = today.getHours() + ":" + today.getMinutes();
 
-    WA.room.area.onLeave('clock').subscribe(closePopup)
-
-    // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
-    bootstrapExtra().then(() => {
-        console.log('Scripting API Extra ready');
-    }).catch(e => console.error(e));
+    // EXEMPLE UTC+6
+    // IL EST 15H la bas
+    console.log("CURRENT TIME IS :");
+    console.log(time);
     
-    
-    // 100 Roads custom TS Julia
-    /// <reference types="@workadventure/iframe-api-typings" />
+    const utcDifference = -(new Date().getTimezoneOffset() / 60) - 2; // Difference between User UTC and Workaventure UTC (UTC - UTC+2);
+    console.log("CURRENT UTC - UTC+2 = " + utcDifference);
 
+    const timeClient = today.getHours() - utcDifference;
+    console.log("CURRENT TIME - UCT DIFF = " + timeClient);
 
-
-console.log('Script started successfully');
-
-// Waiting for the API to be ready
-WA.onInit().then(async () => {
-    console.log('Scripting API ready');
+    // If time hour is between 9h and 18h it's OPEN else it's CLOSED
+    if(timeClient >= 9 & timeClient <= 18) {
+        console.log(">>> OPEN <<<");
+    } else {
+        console.log(">>> CLOSED <<<");
+    }
 
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
     bootstrapExtra().then(() => {
@@ -47,47 +39,7 @@ WA.onInit().then(async () => {
         movement: false,
     });
 
+
 }).catch(e => console.error(e));
-
-
-    WA.room.onEnterLayer("floor1").subscribe(() => {
-        WA.room.hideLayer("roof1");
-        WA.room.hideLayer("walls-bg-front1");
-        WA.room.hideLayer("sign1");
-      });
-    WA.room.onLeaveLayer("floor1").subscribe(() => {
-        WA.room.showLayer("roof1");
-        WA.room.showLayer("walls-bg-front1");
-        WA.room.showLayer("sign1");
-      });
-    WA.room.onEnterLayer("floor2").subscribe(() => {
-        WA.room.hideLayer("roof2");
-        WA.room.hideLayer("walls-bg-front2");
-        WA.room.hideLayer("sign2");
-      });
-    WA.room.onLeaveLayer("floor2").subscribe(() => {
-        WA.room.showLayer("roof2");
-        WA.room.showLayer("walls-bg-front2");
-        WA.room.showLayer("sign2");
-      });
-    WA.room.onEnterLayer("rooms_floor").subscribe(() => {
-        WA.room.hideLayer("facade-furniture-bg");
-        WA.room.hideLayer("facade-furniture-fg");
-        WA.room.hideLayer("facade");
-      });
-    WA.room.onLeaveLayer("rooms_floor").subscribe(() => {
-        WA.room.showLayer("facade-furniture-bg");
-        WA.room.showLayer("facade-furniture-fg");
-        WA.room.showLayer("facade");
-      });
-      
-}).catch(e => console.error(e));
-
-function closePopup(){
-    if (currentPopup !== undefined) {
-        currentPopup.close();
-        currentPopup = undefined;
-    }
-}
 
 export {};
