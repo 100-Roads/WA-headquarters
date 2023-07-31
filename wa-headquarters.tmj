@@ -5700,7 +5700,7 @@
          "name":"roof1",
          "opacity":1,
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":200,
          "x":0,
          "y":0
@@ -5831,7 +5831,7 @@
          "name":"roof2",
          "opacity":1,
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":200,
          "x":0,
          "y":0
@@ -5962,7 +5962,7 @@
          "name":"sign1",
          "opacity":1,
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":200,
          "x":0,
          "y":0
@@ -6093,13 +6093,13 @@
          "name":"sign2",
          "opacity":1,
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":200,
          "x":0,
          "y":0
         }],
  "nextlayerid":52,
- "nextobjectid":1015,
+ "nextobjectid":1016,
  "orientation":"orthogonal",
  "properties":[
         {
